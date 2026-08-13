@@ -7,13 +7,15 @@ export default function Home() {
 
   return (
     <main>
+      <p>状態：{showMovies ? "ON" : "OFF"}</p>
+
       {!showMovies ? (
         <button onClick={() => setShowMovies(true)}>
           映画2025
         </button>
       ) : (
         <div>
-          <h1>映画2025</h1>
+          <h1>映画2025のページです</h1>
 
           <button onClick={() => setShowMovies(false)}>
             戻る
